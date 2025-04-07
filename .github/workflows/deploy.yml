@@ -58,8 +58,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     permissions:
-    pages: write
-    id-token: write
+      pages: write # 为了部署到 GitHub Pages，需要这个权限
+      id-token: write # 为了获取部署令牌，需要这个权限
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
