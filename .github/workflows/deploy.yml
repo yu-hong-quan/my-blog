@@ -46,7 +46,7 @@ jobs:
         run: |
           echo "开始构建..."
           pnpm run docs:build || (echo "构建失败" && exit 1)
-          echo "构建完成" # 使用 pnpm 运行构建
+          echo "构建完成"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
