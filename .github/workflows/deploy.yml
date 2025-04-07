@@ -27,6 +27,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Clear cache
+        run: |
+          rm -rf docs/.vitepress/dist
+          rm -rf docs/.vitepress/cache
       - name: Checkout
         uses: actions/checkout@v4
         with:
