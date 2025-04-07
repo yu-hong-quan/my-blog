@@ -10,20 +10,17 @@ hero:
     alt: VitePress
   actions:
     - theme: brand
-      text: FAST PWA SDK API
-      link: https://carlosme.fun
+      text: 快速开始
+      link: https://vitepress.dev/zh/
     - theme: alt
-      text: PWA 应用案例
-      link: https://carlosme.fun
+      text: 我的掘金
+      link: https://juejin.cn/user/3122268754411688/posts
     - theme: alt
       text: 我的博客
       link: https://yu-hong-quan.github.io/my-blog/
     - theme: alt
-      text: 前端面经
-      link: https://carlosme.fun
-    - theme: alt
       text: 支持一下
-      link: https://carlosme.fun
+      link: /pages/support-it
 
 features:
   - title: 什么是PWA渐进式应用？

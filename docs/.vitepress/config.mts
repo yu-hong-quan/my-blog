@@ -2,12 +2,19 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   title: "余山郡 - 个人博客",
-  description: "A VitePress Site",
+  description: "记录生活和技术",
   base: '/my-blog/', // 添加这行
   // header标签里面插入的内容
   head: [
     ["link", { rel: "icon", href: "/my-blog/config.svg" }]
   ],
+  markdown: {
+    // 代码块风格
+    theme: 'material-theme-palenight',
+    // theme:'github-light',
+    // 代码块显示行数
+    lineNumbers: true,
+  },
   themeConfig: {
     // 网站的logo
     logo: "/logo.svg",
@@ -45,15 +52,25 @@ export default defineConfig({
     },
     nav: [
       { text: "首页", link: "/" },
-      { text: "示例", link: "/markdown-examples" },
+      { text: "学习日记", link: "/pages/api-examples" },
+      { text: "生活日记", link: "/pages/markdown-examples" },
+      { text: "关于作者", link: "/pages/about" },
+      { text: "示例", link: "/pages/markdown-examples" },
     ],
 
     sidebar: [
       {
         text: "示例",
         items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
+          { text: "Markdown Examples", link: "/pages/markdown-examples" },
+          { text: "Runtime API Examples", link: "/pages/api-examples" },
+        ],
+      },
+      {
+        text: "其他相关",
+        items: [
+          { text: "关于作者", link: "/pages/about" },
+          { text: "支持一下", link: "/pages/support-it" },
         ],
       },
     ],
