@@ -47,7 +47,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install # 使用 pnpm 安装依赖
       - name: Build with VitePress
-        run: pnpm run docs:build --base=/vitepress-blog/ # 使用 pnpm 构建 VitePress 站点
+        run: pnpm run docs:build --base=/my-blog/ # 使用 pnpm 构建 VitePress 站点
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
