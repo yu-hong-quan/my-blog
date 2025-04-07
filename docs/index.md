@@ -6,7 +6,7 @@ hero:
   text: "PWA 应用开发"
   tagline: 铸科技之典范，行世间之风采
   image:
-    src: /pwa.svg
+    src: /config.svg
     alt: VitePress
   actions:
     - theme: brand

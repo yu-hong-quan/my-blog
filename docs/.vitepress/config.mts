@@ -6,7 +6,7 @@ export default defineConfig({
   base: '/my-blog/', // 添加这行
   // header标签里面插入的内容
   head: [
-    ["link", { rel: "icon", href: "/config.svg" }]
+    ["link", { rel: "icon", href: "/my-blog/config.svg" }]
   ],
   themeConfig: {
     // 网站的logo
