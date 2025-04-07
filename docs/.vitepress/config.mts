@@ -35,8 +35,8 @@ export default defineConfig({
     },
     // 文档的最后更新时间
     lastUpdated: {
-    text: "Updated at",
-    formatOptions: {
+      text: "Updated at",
+      formatOptions: {
         dateStyle: "full",
         timeStyle: "medium",
       },
@@ -56,6 +56,22 @@ export default defineConfig({
       },
     ],
     // 社交链接
-    socialLinks: [{ icon: "github", link: "https://github.com/yu-hong-quan" }]
+    socialLinks: [{ icon: "github", link: "https://github.com/yu-hong-quan" }],
+    giscus: {
+      repo: 'yu-hong-quan/my-blog', // 例如 'username/repo'
+      repoId: 'R_kgDOOVJE-w', // 从 giscus 应用页面获取
+      category: 'Announcements', // 从 giscus 应用页面获取
+      categoryId: 'DIC_kwDOOVJE-84Co2rN', // 从 giscus 应用页面获取
+      mapping: "pathname",
+      strict: "0",
+      reactionsEnabled: "1",
+      emitMetadata: "0",
+      inputPosition: "top",
+      theme: "preferred_color_scheme",
+      lang: "zh-CN",
+      loading: "lazy",
+      crossorigin: "anonymous",
+      async: true,
+    },
   },
 });
