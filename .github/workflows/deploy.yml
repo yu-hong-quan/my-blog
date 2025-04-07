@@ -48,6 +48,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist # 打包之后产物的文件夹
+          branch: xiaoyu-blog # 部署到的分支
+          single-commit: true
+          clean: true
 
   # 部署工作
   deploy:
