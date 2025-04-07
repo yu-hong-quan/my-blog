@@ -3,6 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "余山郡 - 个人博客",
   description: "A VitePress Site",
+  base: '/xiaoyu-blog/', // 添加这行
   // header标签里面插入的内容
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
