@@ -5,7 +5,9 @@ export default defineConfig({
   description: "A VitePress Site",
   base: '/my-blog/', // 添加这行
   // header标签里面插入的内容
-  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  head: [
+    ["link", { rel: "icon", href: "/config.svg" }]
+  ],
   themeConfig: {
     // 网站的logo
     logo: "/logo.svg",
@@ -56,22 +58,6 @@ export default defineConfig({
       },
     ],
     // 社交链接
-    socialLinks: [{ icon: "github", link: "https://github.com/yu-hong-quan" }],
-    giscus: {
-      repo: 'yu-hong-quan/my-blog', // 例如 'username/repo'
-      repoId: 'R_kgDOOVJE-w', // 从 giscus 应用页面获取
-      category: 'Announcements', // 从 giscus 应用页面获取
-      categoryId: 'DIC_kwDOOVJE-84Co2rN', // 从 giscus 应用页面获取
-      mapping: "pathname",
-      strict: "0",
-      reactionsEnabled: "1",
-      emitMetadata: "0",
-      inputPosition: "top",
-      theme: "preferred_color_scheme",
-      lang: "zh-CN",
-      loading: "lazy",
-      crossorigin: "anonymous",
-      async: true,
-    },
+    socialLinks: [{ icon: "github", link: "https://github.com/yu-hong-quan" }]
   },
 });

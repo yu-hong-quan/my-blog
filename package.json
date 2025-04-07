@@ -17,5 +17,9 @@
   "devDependencies": {
     "@giscus/vue": "^3.1.1",
     "vitepress": "^1.6.3"
+  },
+  "dependencies": {
+    "busuanzi.pure.js": "^1.0.3",
+    "canvas-confetti": "^1.9.3"
   }
 }

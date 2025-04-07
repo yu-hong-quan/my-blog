@@ -2,6 +2,12 @@
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import Layout from "./Layout.vue";
+import confetti from "./components/confetti.vue";
+import busuanzi from "busuanzi.pure.js";
+import VisitorPanel from "./components/visitorPanel.vue";
+import { inBrowser } from 'vitepress'
+// 导入hooks
+import useVisitData from './utils/useVisitData'
 import './style.css'
 import './styles/blur.css'
 import './styles/vp-code-group.css'
@@ -13,6 +19,14 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    // ...
+    app.component("confetti", confetti);
+    app.component("VisitorPanel", VisitorPanel);
+    if (inBrowser) {
+      router.onAfterPageLoad = () => {
+        busuanzi.fetch();
+        // 调用统计访问接口hooks
+        useVisitData();
+      };
+    }
   }
 } satisfies Theme

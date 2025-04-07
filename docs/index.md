@@ -17,7 +17,7 @@ hero:
       link: https://carlosme.fun
     - theme: alt
       text: 我的博客
-      link: https://carlosme.fun
+      link: https://yu-hong-quan.github.io/my-blog/
     - theme: alt
       text: 前端面经
       link: https://carlosme.fun
@@ -63,3 +63,5 @@ features:
     link: https://carlosme.fun
     linkText: 查看详情
 ---
+<!-- 访问量组件 -->
+<VisitorPanel />
