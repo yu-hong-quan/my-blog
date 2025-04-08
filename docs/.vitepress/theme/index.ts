@@ -1,16 +1,17 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
+import busuanzi from "busuanzi.pure.js";
+import { inBrowser } from 'vitepress';
+// 导入hooks
+import useVisitData from './utils/useVisitData';
+import './style.css';
+import './styles/blur.css';
+import './styles/vp-code-group.css';
 import Layout from "./Layout.vue";
 import confetti from "./components/confetti.vue";
-import busuanzi from "busuanzi.pure.js";
 import VisitorPanel from "./components/visitorPanel.vue";
-import { inBrowser } from 'vitepress'
-// 导入hooks
-import useVisitData from './utils/useVisitData'
-import './style.css'
-import './styles/blur.css'
-import './styles/vp-code-group.css'
+import About from "./components/About.vue";
 
 export default {
   Layout: () => {
@@ -21,6 +22,7 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.component("confetti", confetti);
     app.component("VisitorPanel", VisitorPanel);
+    app.component("About", About);
     if (inBrowser) {
       router.onAfterPageLoad = () => {
         busuanzi.fetch();
