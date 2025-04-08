@@ -11,7 +11,7 @@ import './styles/vp-code-group.css';
 import Layout from "./Layout.vue";
 import confetti from "./components/confetti.vue";
 import VisitorPanel from "./components/visitorPanel.vue";
-import About from "./components/About.vue";
+import About from "./components/about.vue";
 
 export default {
   Layout: () => {
