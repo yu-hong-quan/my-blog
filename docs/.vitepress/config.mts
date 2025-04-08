@@ -17,7 +17,7 @@ export default defineConfig({
   },
   themeConfig: {
     // 网站的logo
-    logo: "/logo.svg",
+    logo: "/config.svg",
     // 文章右侧大纲目录
     outline: {
       level: [2, 6],
