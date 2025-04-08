@@ -52,7 +52,7 @@ export default defineConfig({
     },
     nav: [
       { text: "首页", link: "/" },
-      { text: "学习日记", link: "/pages/api-examples" },
+      { text: "学习日记", link: "/pages/learning-diary" },
       { text: "生活日记", link: "/pages/markdown-examples" },
       { text: "关于作者", link: "/pages/about" },
       { text: "示例", link: "/pages/markdown-examples" },
@@ -64,6 +64,14 @@ export default defineConfig({
         items: [
           { text: "Markdown Examples", link: "/pages/markdown-examples" },
           { text: "Runtime API Examples", link: "/pages/api-examples" },
+        ],
+      },
+      {
+        text: "学习日记",
+        items: [
+          { text: "Vue3", items: [{ text: "详解Vite2.0+TypeScript+Vue3项目搭建以及介绍Vue3相关特性", link: "/pages/vue3-project-construction" }] },
+          { text: "JavaScript", items: [{ text: "JavaScript 学习", link: "/pages/javascript" }] },
+          { text: "TypeScript", items: [{ text: "TypeScript 学习", link: "/pages/typescript" }] },
         ],
       },
       {
