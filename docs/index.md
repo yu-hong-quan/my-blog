@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "余山郡"
-  text: "PWA 应用开发"
+  text: ""
   tagline: 铸科技之典范，行世间之风采
   image:
     src: /pwa.svg

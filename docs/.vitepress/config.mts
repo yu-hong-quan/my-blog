@@ -1,9 +1,9 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "余山郡 - 个人博客",
-  description: "记录生活和技术",
-  base: '/my-blog/', // 添加这行
+  title: "余山郡",
+  description: "记录美好生活",
+  base: '/my-blog/',
   // header标签里面插入的内容
   head: [
     ["link", { rel: "icon", href: "/my-blog/config.svg" }]
@@ -53,32 +53,78 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "学习日记", link: "/pages/learning-diary" },
-      { text: "生活日记", link: "/pages/markdown-examples" },
-      { text: "关于作者", link: "/pages/about" },
-      { text: "示例", link: "/pages/markdown-examples" },
+      { text: "记录美好生活", link: "/pages/record" },
+      { text: "关于作者", link: "/pages/other/about" },
     ],
 
     sidebar: [
+      {
+        text: "学习日记",
+        link: "/pages/learning-diary/index",
+        items: [
+          { 
+            text: "前端",
+            link: "/pages/learning-diary/front-end", 
+            items: [
+              { text: "详解Vite2.0+TypeScript+Vue3项目搭建以及介绍Vue3相关特性", link: "/pages/vue3-project-construction" },
+            ]
+          },
+          { 
+            text: "后端",
+            link: "/pages/back-end",
+          },
+          { 
+            text: "数据库",
+            link: "/pages/database",
+          },
+          { 
+            text: "运维",
+            link: "/pages/ops",
+          },
+          { 
+            text: "算法",
+            link: "/pages/algorithm",
+          },
+          { 
+            text: "干货", 
+            link: "/pages/tools"
+          },
+        ],
+      },
+      {
+        text: "记录美好生活",
+        link: "/pages/record",
+        items: [
+          { 
+            text: "旅行日记", 
+            link: "/pages/record/travel",
+            items: [
+              { text: "2025年1月", link: "/pages/record/travel/2025-1" },
+              { text: "2025年2月", link: "/pages/record/travel/2025-2" }, 
+            ]
+          },
+          { 
+            text: "生活日记", 
+            link: "/pages/record/life",
+            items: [
+              { text: "2025年1月", link: "/pages/record/life/2025-1" },
+              { text: "2025年2月", link: "/pages/record/life/2025-2" }, 
+            ]
+          },
+        ],
+      },
+      {
+        text: "其他",
+        items: [
+          { text: "关于作者", link: "/pages/other/about" },
+          { text: "支持一下", link: "/pages/other/support-it" },
+        ],
+      },
       {
         text: "示例",
         items: [
           { text: "Markdown Examples", link: "/pages/markdown-examples" },
           { text: "Runtime API Examples", link: "/pages/api-examples" },
-        ],
-      },
-      {
-        text: "学习日记",
-        items: [
-          { text: "Vue3", items: [{ text: "详解Vite2.0+TypeScript+Vue3项目搭建以及介绍Vue3相关特性", link: "/pages/vue3-project-construction" }] },
-          { text: "JavaScript", items: [{ text: "JavaScript 学习", link: "/pages/javascript" }] },
-          { text: "TypeScript", items: [{ text: "TypeScript 学习", link: "/pages/typescript" }] },
-        ],
-      },
-      {
-        text: "其他相关",
-        items: [
-          { text: "关于作者", link: "/pages/about" },
-          { text: "支持一下", link: "/pages/support-it" },
         ],
       },
     ],
