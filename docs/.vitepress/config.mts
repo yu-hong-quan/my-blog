@@ -64,7 +64,7 @@ export default defineConfig({
         items: [
           { 
             text: "前端",
-            link: "/pages/learning-diary/front-end", 
+            link: "/pages/learning-diary/front-end/vue3-project-construction", 
             items: [
               { text: "详解Vite2.0+TypeScript+Vue3项目搭建以及介绍Vue3相关特性", link: "/pages/vue3-project-construction" },
             ]
