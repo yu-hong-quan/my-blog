@@ -55,12 +55,12 @@ export default defineConfig({
       { text: "学习日记", link: "/pages/learning-diary" },
       { text: "记录美好生活", link: "/pages/record" },
       { text: "关于作者", link: "/pages/other/about" },
+      { text: "博客统计", link: "https://us.umami.is/share/Y2BYxCAm7R0DG2Xi/carlosme.fun" }
     ],
-
     sidebar: [
       {
         text: "学习日记",
-        link: "/pages/learning-diary/index",
+        link: "/pages/learning-diary",
         items: [
           { 
             text: "前端",
@@ -129,6 +129,9 @@ export default defineConfig({
       },
     ],
     // 社交链接
-    socialLinks: [{ icon: "github", link: "https://github.com/yu-hong-quan" }]
+    socialLinks: [
+      { icon: "github", link: "https://github.com/yu-hong-quan" },
+      { icon: "juejin", link: "https://juejin.cn/user/3122268754411688/posts"}
+    ]
   },
 });
