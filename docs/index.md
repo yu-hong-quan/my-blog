@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "余山郡"
-  text: ""
+  text: "记录美好生活"
   tagline: 铸科技之典范，行世间之风采
   image:
     src: /pwa.svg
