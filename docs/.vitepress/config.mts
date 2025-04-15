@@ -64,30 +64,24 @@ export default defineConfig({
         items: [
           { 
             text: "前端",
-            link: "/pages/learning-diary/front-end/vue3-project-construction", 
             items: [
-              { text: "详解Vite2.0+TypeScript+Vue3项目搭建以及介绍Vue3相关特性", link: "/pages/vue3-project-construction" },
+              { text: "详解Vite2.0+TypeScript+Vue3项目搭建以及介绍Vue3相关特性", link: "/pages/learning-diary/front-end/vue3-project-construction" },
             ]
           },
           { 
             text: "后端",
-            link: "/pages/back-end",
           },
           { 
             text: "数据库",
-            link: "/pages/database",
           },
           { 
             text: "运维",
-            link: "/pages/ops",
           },
           { 
             text: "算法",
-            link: "/pages/algorithm",
           },
           { 
             text: "干货", 
-            link: "/pages/tools"
           },
         ],
       },
@@ -97,7 +91,6 @@ export default defineConfig({
         items: [
           { 
             text: "旅行日记", 
-            link: "/pages/record/travel",
             items: [
               { text: "2025年1月", link: "/pages/record/travel/2025-1" },
               { text: "2025年2月", link: "/pages/record/travel/2025-2" }, 
@@ -105,7 +98,6 @@ export default defineConfig({
           },
           { 
             text: "生活日记", 
-            link: "/pages/record/life",
             items: [
               { text: "2025年1月", link: "/pages/record/life/2025-1" },
               { text: "2025年2月", link: "/pages/record/life/2025-2" }, 
@@ -115,6 +107,7 @@ export default defineConfig({
       },
       {
         text: "其他",
+        link: "/pages/other",
         items: [
           { text: "关于作者", link: "/pages/other/about" },
           { text: "支持一下", link: "/pages/other/support-it" },

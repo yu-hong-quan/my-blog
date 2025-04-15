@@ -20,7 +20,7 @@ hero:
       link: https://yu-hong-quan.github.io/my-blog/
     - theme: alt
       text: 支持一下
-      link: /pages/support-it
+      link: /pages/other/support-it
 
 features:
   - title: 什么是PWA渐进式应用？

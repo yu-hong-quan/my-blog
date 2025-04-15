@@ -76,10 +76,10 @@ const skills = [
 ]
 
 const hobbies = [
-  { name: '游戏', desc: '《塞尔达传说》系列', icon: '🎮' },
+  { name: '游戏', desc: '永杰无间、穿越火线、天涯明月刀、逆水寒、QQ飞车、我的世界、吃鸡、王者', icon: '🎮' },
   { name: '音乐', desc: '流行音乐、民谣', icon: '🎵' },
-  { name: '篮球', desc: 'NBA、街头篮球', icon: '🏀' },
-  { name: '阅读', desc: '技术书籍', icon: '📚' }
+  { name: '篮球', desc: '街头篮球', icon: '🏀' },
+  { name: '阅读', desc: '技术书籍、文学书籍', icon: '📚' }
 ]
 </script>
 
