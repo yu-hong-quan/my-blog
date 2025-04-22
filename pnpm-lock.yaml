@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      animate.css:
+        specifier: ^4.1.1
+        version: 4.1.1
       busuanzi.pure.js:
         specifier: ^1.0.3
         version: 1.0.3
@@ -557,6 +560,9 @@ packages:
   algoliasearch@5.23.2:
     resolution: {integrity: sha512-IhKP22Czzg8Y9HaF6aIb5aAHK2HBj4VAzLLnKEPUnxqDwxpryH9sXbm0NkeY7Cby9GlF81wF+AG/VulKDFBphg==}
     engines: {node: '>= 14.0.0'}
+
+  animate.css@4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
 
   birpc@0.2.19:
     resolution: {integrity: sha512-5WeXXAvTmitV1RqJFppT5QtUiz2p1mRSYU000Jkft5ZUCLJIk4uQriYNO50HknxKwM6jd8utNc66K1qGIwwWBQ==}
@@ -1298,6 +1304,8 @@ snapshots:
       '@algolia/requester-browser-xhr': 5.23.2
       '@algolia/requester-fetch': 5.23.2
       '@algolia/requester-node-http': 5.23.2
+
+  animate.css@4.1.1: {}
 
   birpc@0.2.19: {}
 

@@ -16,9 +16,6 @@ hero:
       text: 我的掘金
       link: https://juejin.cn/user/3122268754411688/posts
     - theme: alt
-      text: 我的博客
-      link: https://yu-hong-quan.github.io/my-blog/
-    - theme: alt
       text: 支持一下
       link: /pages/other/support-it
 

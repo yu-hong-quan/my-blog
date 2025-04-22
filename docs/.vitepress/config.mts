@@ -6,7 +6,8 @@ export default defineConfig({
   base: '/my-blog/',
   // header标签里面插入的内容
   head: [
-    ["link", { rel: "icon", href: "/my-blog/config.svg" }]
+    ["link", { rel: "icon", href: "/my-blog/config.svg" }],
+    ["link", { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" }]
   ],
   markdown: {
     // 代码块风格
@@ -52,7 +53,7 @@ export default defineConfig({
     },
     nav: [
       { text: "首页", link: "/" },
-      { text: "学习日记", link: "/pages/learning-diary" },
+      { text: "学习日记", link: "/pages/learning-diary/brief-description-of" },
       { text: "记录美好生活", link: "/pages/record" },
       { text: "关于作者", link: "/pages/other/about" },
       { text: "博客统计", link: "https://us.umami.is/share/Y2BYxCAm7R0DG2Xi/carlosme.fun" }
@@ -60,12 +61,13 @@ export default defineConfig({
     sidebar: [
       {
         text: "学习日记",
-        link: "/pages/learning-diary",
+        link: "/pages/learning-diary/brief-description-of",
         items: [
           { 
             text: "前端",
             items: [
               { text: "详解Vite2.0+TypeScript+Vue3项目搭建以及介绍Vue3相关特性", link: "/pages/learning-diary/front-end/vue3-project-construction" },
+              { text: "Vue常见面试题(持续更新)", link: "/pages/learning-diary/front-end/vue-interview-questions" },
             ]
           },
           { 
