@@ -59,3 +59,6 @@ features:
 ---
 <!-- 访问量组件 -->
 <VisitorPanel />
+
+<!-- 纸屑组件 -->
+<confetti />
