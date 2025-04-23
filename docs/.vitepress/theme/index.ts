@@ -9,6 +9,7 @@ import Layout from "./Layout.vue";
 import confetti from "./components/confetti.vue";
 import VisitorPanel from "./components/visitorPanel.vue";
 import About from "./components/about.vue";
+// 注意，样式表引入需放在组件后再引入，否则样式无法生效
 import './style.css';
 
 export default {
