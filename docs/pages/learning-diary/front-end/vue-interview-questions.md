@@ -190,11 +190,13 @@ Vue.js 中常用的事件修饰符包括但不限于以下几种：
 
 基于这个优先级规则，为了优化性能并避免不必要的循环，推荐的做法是将v-if放在外层template标签或单独的元素上，包裹住v-for所在的元素，这样可以先筛选数据源再进行列表渲染。例如：
 
-&lt;template v-if="shouldRenderItems"&gt;
-  &lt;div v-for="item in items" :key="item.id"&gt;
-    &lt;!-- 渲染item --&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
+``` vue
+<template v-if="shouldRenderItems">
+ <div v-for="item in items" :key="item.id">
+   <!-- 渲染item -->
+ </div>
+</template>
+```
 
 或者如果需要根据条件过滤列表中的项目，则可以先通过计算属性或其他方式预处理数据源。
 
