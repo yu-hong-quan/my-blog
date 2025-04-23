@@ -41,19 +41,19 @@ features:
   - title: Vue常见面试题（持续更新）
     icon:
       src: /lightning.svg
-    details: 面试宝典，冲就完事了。
+    details: 涵盖Vue2/Vue3核心概念、响应式原理、虚拟DOM、组件通信等高频面试题，包含源码解析和最佳实践，助您轻松应对Vue技术面试。
     link: /pages/learning-diary/front-end/vue-interview-questions
     linkText: 查看详情
   - title: 微信小程序面试题（持续更新）
     icon:
       src: /mode.svg
-    details: 面试宝典，冲就完事了。
+    details: 整理小程序开发核心知识点，包括生命周期、自定义组件、性能优化、跨平台适配等实战经验，帮助开发者全面掌握小程序开发生态。
     link: /pages/learning-diary/front-end/wechat-interview-questions
     linkText: 查看详情
   - title: 前端未来趋势
     icon:
       src: /earth.svg
-    details: 前端未来趋势
+    details: 探索WebAssembly、微前端架构、低代码平台、Serverless等前沿技术，分析前端工程化、智能化发展方向，把握行业技术脉搏。
     link: /pages/learning-diary/front-end/front-future-trend
     linkText: 查看详情
 ---
