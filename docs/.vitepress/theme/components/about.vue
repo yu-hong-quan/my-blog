@@ -4,9 +4,6 @@
     
     <!-- 个人信息卡片 -->
     <div class="profile-card">
-      <div class="avatar-section">
-        <img src="/avatar.png" alt="作者头像" class="avatar">
-      </div>
       <div class="info-section">
         <h2 class="info-title" style="margin-top:0;">个人信息</h2>
         <div class="info-item">

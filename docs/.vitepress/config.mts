@@ -18,7 +18,7 @@ export default defineConfig({
   },
   themeConfig: {
     // 网站的logo
-    logo: "/config.svg",
+    logo: "/logo.svg",
     // 文章右侧大纲目录
     outline: {
       level: [2, 6],
@@ -66,8 +66,9 @@ export default defineConfig({
           { 
             text: "前端",
             items: [
-              { text: "详解Vite2.0+TypeScript+Vue3项目搭建以及介绍Vue3相关特性", link: "/pages/learning-diary/front-end/vue3-project-construction" },
-              { text: "Vue常见面试题(持续更新)", link: "/pages/learning-diary/front-end/vue-interview-questions" },
+              { text: "1. 详解Vue3项目搭建以及介绍Vue3相关特性", link: "/pages/learning-diary/front-end/vue3-project-construction" },
+              { text: "2. Vue常见面试题(持续更新)", link: "/pages/learning-diary/front-end/vue-interview-questions" },
+              { text: "3. Vue性能优化方案", link: "/pages/learning-diary/front-end/vue-performance-optimization" },
             ]
           },
           { 
