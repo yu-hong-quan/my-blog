@@ -5,13 +5,11 @@ import busuanzi from "busuanzi.pure.js";
 import { inBrowser } from 'vitepress';
 // 导入hooks
 import useVisitData from './utils/useVisitData';
-import './style.css';
-import './styles/blur.css';
-import './styles/vp-code-group.css';
 import Layout from "./Layout.vue";
 import confetti from "./components/confetti.vue";
 import VisitorPanel from "./components/visitorPanel.vue";
 import About from "./components/about.vue";
+import './style.css';
 
 export default {
   Layout: () => {
