@@ -12,6 +12,7 @@ import About from "./components/about.vue";
 // 注意，样式表引入需放在组件后再引入，否则样式无法生效
 import './style.css';
 
+
 export default {
   Layout: () => {
     return h(Layout, null, {
@@ -22,7 +23,9 @@ export default {
     app.component("confetti", confetti);
     app.component("VisitorPanel", VisitorPanel);
     app.component("About", About);
+    
     if (inBrowser) {
+      router.onBeforeRouteChange = () => {};
       router.onAfterPageLoad = () => {
         busuanzi.fetch();
         // 调用统计访问接口hooks
