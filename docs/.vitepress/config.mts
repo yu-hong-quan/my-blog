@@ -66,9 +66,11 @@ export default defineConfig({
           { 
             text: "前端",
             items: [
+              { text: "0. 前端未来趋势", link: "/pages/learning-diary/front-end/front-future-trend" },
               { text: "1. 详解Vue3项目搭建以及介绍Vue3相关特性", link: "/pages/learning-diary/front-end/vue3-project-construction" },
               { text: "2. Vue常见面试题(持续更新)", link: "/pages/learning-diary/front-end/vue-interview-questions" },
               { text: "3. Vue性能优化方案", link: "/pages/learning-diary/front-end/vue-performance-optimization" },
+              { text: "4. 微信小程序面试题(持续更新)", link: "/pages/learning-diary/front-end/wechat-interview-questions" },
             ]
           },
           { 
@@ -115,14 +117,7 @@ export default defineConfig({
           { text: "关于作者", link: "/pages/other/about" },
           { text: "支持一下", link: "/pages/other/support-it" },
         ],
-      },
-      {
-        text: "示例",
-        items: [
-          { text: "Markdown Examples", link: "/pages/markdown-examples" },
-          { text: "Runtime API Examples", link: "/pages/api-examples" },
-        ],
-      },
+      }
     ],
     // 社交链接
     socialLinks: [
