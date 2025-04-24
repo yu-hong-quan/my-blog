@@ -1,8 +1,5 @@
 # Vue常见面试题(持续更新)
 
-
-## Vue面试题
-
 ### 1.谈谈你对MVVM开发模式的理解
 
 MVVM（Model-View-ViewModel）是一种[软件架构设计](https://so.csdn.net/so/search?q=%E8%BD%AF%E4%BB%B6%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1&spm=1001.2101.3001.7020)模式，特别适用于构建现代的用户界面应用程序，尤其是在前端开发领域中广为采用。它起源于微软WPF和Silverlight技术栈，后来在JavaScript世界中的框架如Vue.js、AngularJS/Angular以及React（通过Redux等状态管理库结合使用）得到了广泛应用。

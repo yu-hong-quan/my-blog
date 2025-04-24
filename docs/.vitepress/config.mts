@@ -55,7 +55,7 @@ export default defineConfig({
       { text: "首页", link: "/" },
       { text: "学习日记", link: "/pages/learning-diary/brief-description-of" },
       { text: "记录美好生活", link: "/pages/record" },
-      { text: "关于作者", link: "/pages/other/about" },
+      { text: "关于我", link: "/pages/other/about" },
       { text: "博客统计", link: "https://us.umami.is/share/Y2BYxCAm7R0DG2Xi/carlosme.fun" }
     ],
     sidebar: [
@@ -63,14 +63,20 @@ export default defineConfig({
         text: "学习日记",
         link: "/pages/learning-diary/brief-description-of",
         items: [
+          {
+            text: "面试宝典",
+            items: [
+              { text: "Vue常见面试题(持续更新)", link: "/pages/learning-diary/front-end/vue-interview-questions" },
+              { text: "微信小程序面试题(持续更新)", link: "/pages/learning-diary/front-end/wechat-interview-questions" }
+            ]
+          },
           { 
             text: "前端",
             items: [
-              { text: "0. 前端未来趋势", link: "/pages/learning-diary/front-end/front-future-trend" },
-              { text: "1. 详解Vue3项目搭建以及介绍Vue3相关特性", link: "/pages/learning-diary/front-end/vue3-project-construction" },
-              { text: "2. Vue常见面试题(持续更新)", link: "/pages/learning-diary/front-end/vue-interview-questions" },
-              { text: "3. Vue性能优化方案", link: "/pages/learning-diary/front-end/vue-performance-optimization" },
-              { text: "4. 微信小程序面试题(持续更新)", link: "/pages/learning-diary/front-end/wechat-interview-questions" },
+              { text: "前端未来趋势", link: "/pages/learning-diary/front-end/front-future-trend" },
+              { text: "详解Vue3项目搭建以及介绍Vue3相关特性", link: "/pages/learning-diary/front-end/vue3-project-construction" },
+              { text: "Vue性能优化方案", link: "/pages/learning-diary/front-end/vue-performance-optimization" },
+              { text: "VitePress 搭建博客系统指南", link: "/pages/learning-diary/front-end/vitepress-blog" },
             ]
           },
           { 
@@ -87,7 +93,7 @@ export default defineConfig({
           },
           { 
             text: "干货", 
-          },
+          }
         ],
       },
       {
