@@ -49,7 +49,7 @@ $ yarn vitepress init
 
 ###
 
-![vitepress init](../../images/vitepress_init.png)
+![vitepress init](images/vitepress_init.png)
 
 如果正在构建一个独立的 VitePress 站点，可以在当前目录 (`./`) 中搭建站点。但是，如果在现有项目中与其他源代码一起安装 VitePress，建议将站点搭建在嵌套目录 (例如 `./docs`) 中，以便它与项目的其余部分分开。
 
@@ -208,7 +208,7 @@ export default defineConfig({
 
 运行`pnpm run dev`，打开浏览器，发现默认的颜色主题已经更改了
 
-![vitepress blog 预览图 1](../../images/vitepress-preview-1.png)
+![vitepress blog 预览图 1](images/vitepress-preview-1.png)
 
 ### 4. 修改首页
 
@@ -291,13 +291,13 @@ features:
 ```
 
 此时首页的内容发生了更改：如下图所示：
-![vitepress blog 预览图 2](../../images/vitepress-preview-2.png)
+![vitepress blog 预览图 2](images/vitepress-preview-2.png)
 
 ## 四、打包部署
 
 ### 1. 在 github 中创建一个名称为`vitepress-blog`的仓库，当然仓库的名字可以自定义
 
-![github-repo](../../images/github-repo.png)
+![github-repo](images/github-repo.png)
 
 ### 2. 在项目中初始化 git
 
@@ -333,7 +333,7 @@ git push -u origin main
 :::tip
 基本都使用 github pages 来部署博客系统，使用 github pages 有两种方式，一种是通过分支部署，通常要写一个`deploy.sh`,在提交代码之后执行该脚本，将打包之后的产物放到另一个分支上，通过 github pages `Deploy from a branch` 方式部署，另一种通过`github actions`来部署。这里展示利用`github actions` 来部署，更加快捷，每次提交完代码自动构建部署。
 :::
-![github pages](../../images/vitepress-repo-deploy.png)
+![github pages](images/vitepress-repo-deploy.png)
 
 如上图所示，我们在 github`vitepress-blog`仓库的`Settings`里面，找到`Pages`, 部署方式选择`Github Actions`,下面编写 github 的`workflows`。
 
@@ -423,22 +423,22 @@ github actions 如果报错：Error: No pnpm version is specified. Please specif
 
 **Github Actions 位置**：
 
-![github-actions](../../images/github-actions.png)
+![github-actions](images/github-actions.png)
 
 **Github Actions 构建部署**：
 
-![github-actions](../../images/github-actions1.png)
-![github-actions](../../images/github-actions2.png)
+![github-actions](images/github-actions1.png)
+![github-actions](images/github-actions2.png)
 
 **Github Actions 部署完成之后，访问 Github Pages 的链接，即可访问博客系统**：
 
 例如： [https://chinacarlos.github.io/vitepress-blog-template/](https://chinacarlos.github.io/vitepress-blog-template/)
 
-![github-actions](../../images/github-action3.png)
+![github-actions](images/github-action3.png)
 
 **如果有自己的博客域名，可以将博客域名绑定到`Custom domain` 下，绑定之后，访问该域名会自动跳转定位到该博客系统**
 
-![博客系统预览](../../images/github-action4.png)
+![博客系统预览](images/github-action4.png)
 
 ::: warning
 
@@ -457,7 +457,7 @@ github actions 如果报错：Error: No pnpm version is specified. Please specif
 
 ### 1. 更改搜索框的位置，修改代码块，给导航栏添加毛玻璃等效果，如下图：
 
-![预览图](../../images/preview-blog.gif)
+![预览图](images/preview-blog.gif)
 
 修改`.vitepress/theme/style.css`文件：
 
@@ -720,11 +720,11 @@ $ npm install -D @giscus/vue
 
 打开[giscus 文档](https://giscus.app/zh-CN)，如下图所示，填入你的 github `用户名 + 仓库名`，勾选你需要的配置
 
-![giscus.png](../../images/giscus.png)
+![giscus.png](images/giscus.png)
 
 **记住你的这几个参数 `repo`, `repo-id`, `category`, `category-id`**, 后面添加评论组件需要用到
 
-![giscus1.png](../../images/giscus1.png)
+![giscus1.png](images/giscus1.png)
 
 在`.vitepress/theme/`目录下创建`Layout.vue`组件，添加 giscus 评论组件，在`.vitepress/config.mts`配置文件中使用自定义布局。
 
@@ -800,7 +800,7 @@ export default {
 :::
 
 添加之后效果如下：
-![giscus-preview.png](../../images/giscus-preview.png)
+![giscus-preview.png](images/giscus-preview.png)
 
 ---
 
@@ -854,7 +854,7 @@ import confetti from "./components/confetti.vue";
 
 添加之后的首页效果图：
 
-![confetti.gif](../../images/confetti.gif)
+![confetti.gif](images/confetti.gif)
 
 ### 3. 首页添加`访客统计`插件 `busuanzi`
 
@@ -976,7 +976,7 @@ const onLinkUmiHandle = () => {
 
 安装完之后效果图：
 
-![busuanzi.png](../../images/busuanzi.png)
+![busuanzi.png](images/busuanzi.png)
 
 ### 4. 其他实用插件
 
@@ -986,17 +986,17 @@ const onLinkUmiHandle = () => {
 
 - sandpack 插件，实时编码 `itepress-plugin-sandpack` https://vitepress-sandbox.js-bridge.com/
 
-  ![sandpack.png](../../images/sandpack.png)
+  ![sandpack.png](images/sandpack.png)
 
 - Vue 组件预览插件 `@vitepress-code-preview` https://welives.github.io/vitepress-code-preview/
-  ![code-preview.png](../../images/code-preview.png)
+  ![code-preview.png](images/code-preview.png)
 
 - 根据目录自定生成侧边栏插件 `vitepress-sidebar` https://vitepress-sidebar.cdget.com/
 
 - 页面加载进度插件 `vitepress-plugin-nprogress` https://github.com/ZhongxuYang/vitepress-plugin-nprogress
 
 - 文件图标插件 `vitepress-plugin-group-icons` https://vp.yuy1n.io/
-  ![icon.png](../../images/icon.png)
+  ![icon.png](images/icon.png)
 
 - 博客访问流量统计分析工具 `https://umami.is/`
 
